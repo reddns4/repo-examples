@@ -6,6 +6,7 @@ a = [int(i) for i in input().split()]
 count = 0
 
 for i in range(0, len(a)):
+    #print('DEB', i, a[i], a[i-1])
     if a[i-1] != a[i]:
         count += 1
         
