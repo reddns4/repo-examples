@@ -30,7 +30,6 @@
 # 6 8 10
 
 n = int(input())
-_DEBUG = 1
 
 all_nums = set(range(1, n + 1))
 possible_nums = all_nums
@@ -41,9 +40,6 @@ while True:
         break
     guess = {int(x) for x in guess.split()}
     
-    if _DEBUG:
-        print("DEBUG", possible_nums, len(guess), len(possible_nums), len(possible_nums) // 2 )
-
     if len(possible_nums & guess) > (len(possible_nums) / 2):
         print('YES') 
         possible_nums &= guess
