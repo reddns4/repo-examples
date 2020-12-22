@@ -31,7 +31,7 @@
 # Japanese
 # Russian
 
-n = int(input()) # В первой строке задано количество школьников.
+n = int(input())
 
 all_lang = set()
 uniq_lang = set()
