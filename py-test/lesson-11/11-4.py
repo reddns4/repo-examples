@@ -13,12 +13,12 @@
 # a
 
 d = {}
-max = 0
+
 for _ in range(int(input())):
     for word in input().split():
         d[word] = d.get(word, 0) + 1
-        if d[word] > max:
-            max = d[word]
+        
+max = max(d.values())
 
 for k, v in sorted(d.items()):
     if v == max:
